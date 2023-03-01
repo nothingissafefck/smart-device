@@ -1,3 +1,5 @@
+@use "../variables";
+
 .wrapper {
   position: relative;
 
@@ -15,14 +17,6 @@
   main {
     flex-grow: 1;
   }
-}
-
-.rouble {
-  font-family: $ff-rouble;
-  /* stylelint-disable */
-  text-transform: lowercase !important;
-  font-weight: 400 !important;
-  /* stylelint-enable */
 }
 
 .visually-hidden {
@@ -68,4 +62,16 @@
 
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
+}
+
+.reset-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.hidden-tablet {
+  @media (max-width: variables.$vp-max-tablet) {
+    display: none;
+  }
 }
