@@ -27,6 +27,7 @@
                 <use href="img/sprite.svg#icon-email"></use>
               </svg>
               <span class="header__link-text hidden-tablet">info@sd.ru</span>
+              <span class="visually-hidden">Написать письмо на e-mail.</span>
             </a>
           </li>
 
@@ -36,6 +37,7 @@
                 <use href="img/sprite.svg#icon-phone"></use>
               </svg>
               <span class="header__link-text hidden-tablet">+7 (495) 000 52 52</span>
+              <span class="visually-hidden">Позвонить в магазин.</span>
             </a>
           </li>
         </ul>
@@ -44,40 +46,105 @@
       </div>
     </div>
   </header>
+
   <main></main>
-  <footer>
-    <div class="container"></div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__container">
+        <div class="footer__social-container social-list">
+          <a href="index.html">
+            <img class="footer__logo" src="img/logo.svg" width="215" height="55" alt="Логотип интернет-магазина печатных плат Smart Device.">
+          </a>
+
+          <ul class="social-list__content reset-list">
+            <li class="social-list__item">
+              <a class="social-list__link page-link" href="https://ok.ru/">
+                <svg aria-hidden="true" focusable="false" width="30" height="30">
+                  <use href="img/sprite.svg#icon-ok"></use>
+                </svg>
+                <span class="visually-hidden">Одноклассники.</span>
+              </a>
+            </li>
+
+            <li class="social-list__item">
+              <a class="social-list__link page-link" href="https://vk.com/">
+                <svg aria-hidden="true" focusable="false" width="30" height="30">
+                  <use href="img/sprite.svg#icon-vk"></use>
+                </svg>
+                <span class="visually-hidden">Вконтакте.</span>
+              </a>
+            </li>
+
+            <li class="social-list__item">
+              <a class="social-list__link page-link" href="https://ru.pinterest.com/">
+                <svg aria-hidden="true" focusable="false" width="30" height="30">
+                  <use href="img/sprite.svg#icon-pinterest"></use>
+                </svg>
+                <span class="visually-hidden">Пинтерест.</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <nav class="footer__navigation">
+          <h4>Разделы сайта</h4>
+
+          <button class="footer__btn" type="button">
+            <span class="visually-hidden">Развернуть меню.</span>
+          </button>
+
+          <ul class="footer__navigation-links reset-list">
+            <li class="footer__navigation-item footer__link-item">
+              <a class="footer__navigation-link page-link" href="#">О компании</a>
+            </li>
+
+            <li class="footer__navigation-item footer__link-item">
+              <a class="footer__navigation-link page-link" href="#">Продукты</a>
+            </li>
+
+            <li class="footer__navigation-item footer__link-item">
+              <a class="footer__navigation-link page-link" href="#">Производство печатных плат</a>
+            </li>
+
+            <li class="footer__navigation-item footer__link-item">
+              <a class="footer__navigation-link page-link" href="#">Монтаж печатных плат</a>
+            </li>
+          </ul>
+
+          <ul class="footer__navigation-links reset-list">
+            <li class="footer__navigation-item footer__link-item">
+              <a class="footer__navigation-link page-link" href="#">Комплектующие</a>
+            </li>
+
+            <li class="footer__navigation-item footer__link-item">
+              <a class="footer__navigation-link page-link" href="#">Доставка</a>
+            </li>
+
+            <li class="footer__navigation-item footer__link-item">
+              <a class="footer__navigation-link page-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="footer__address-wrapper">
+          <h4>Наш офис</h4>
+
+          <button class="footer__btn" type="button">
+            <span class="visually-hidden">Развернуть меню.</span>
+          </button>
+
+          <address class="footer__address">
+            <span class="footer__location">г.&nbsp;Мытищи, Олимпийский проспект,&nbsp;д.10</span>
+            <a class="footer__phone page-link" href="tel:+74955894050">+7 (495) 589-40-50</a>
+            <a class="footer__phone page-link" href="tel:+79253895829">+7 (925) 389-58-29</a>
+            <a class="footer__phone page-link" href="tel:+79253647813">+7 (925) 364-78-13</a>
+          </address>
+        </div>
+      </div>
+    </div>
   </footer>
 </div>
-
-<!--&lt;!&ndash; Модалки &ndash;&gt;-->
-<!--<div class="modal modal&#45;&#45;preload" data-modal="feedback">-->
-<!--  <div class="modal__wrapper">-->
-<!--    <div class="modal__overlay" data-close-modal></div>-->
-<!--    <div class="modal__content">-->
-<!--      <p class="modal__description">Обычная модалка</p>-->
-<!--      <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>-->
-<!--        <svg width="15" height="15">-->
-<!--          <use xlink:href="img/sprite.svg#icon-close"></use>-->
-<!--        </svg>-->
-<!--      </button>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</div>-->
-
-<!--<div class="modal modal&#45;&#45;preload modal&#45;&#45;fit-content modal&#45;&#45;no-scale" data-modal="success">-->
-<!--  <div class="modal__wrapper">-->
-<!--    <div class="modal__overlay" data-close-modal></div>-->
-<!--    <div class="modal__content">-->
-<!--      <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>-->
-<!--      <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>-->
-<!--        <svg width="15" height="15">-->
-<!--          <use xlink:href="img/sprite.svg#icon-close"></use>-->
-<!--        </svg>-->
-<!--      </button>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</div>-->
 
 <script src="js/vendor.min.js"></script>
 <script src="js/main.min.js"></script>
