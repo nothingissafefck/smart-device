@@ -11,6 +11,10 @@
 
 .header__container {
   display: flex;
+
+  @media (max-width: variables.$vp-max-mobile) {
+    padding: 0 10px;
+  }
 }
 
 .header__logo {

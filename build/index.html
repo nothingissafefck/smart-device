@@ -82,7 +82,7 @@
               </svg>
               <h3>Оперативные сроки</h3>
               <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и&nbsp;доставлять
-                заказы плат и&nbsp;комплектующих в&nbsp;самые короткие сроки<br></p>
+                заказы плат и комплектующих в&nbsp;самые короткие сроки<br></p>
             </li>
 
             <li class="advantages__item">
@@ -120,7 +120,7 @@
         <div class="about__container">
           <img class="about__image hidden-max-tablet" src="img/year.png" width="150" height="320" alt="2022-й год.">
 
-          <div class="about__description">
+          <div class="about__description" data-expandable>
             <h2>О компании</h2>
             <p>Мы&nbsp;поставляем электронные комплектующие, производим печатные платы и&nbsp;предоставляем мировые
               технологии
@@ -132,16 +132,19 @@
               АвтоГАЗ),
               МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
 
-            <p class="visually-hidden">Smart Device&nbsp;&mdash; это команда профессионалов. Через нас прошло более 1&nbsp;000&nbsp;000&nbsp;клиентов,
+            <p data-expandable-item>Smart Device&nbsp;&mdash; это команда профессионалов. Через нас прошло более 1&nbsp;000&nbsp;000&nbsp;клиентов,
               70% из&nbsp;которых продолжают сотрудничество по&nbsp;сей день. На&nbsp;данный момент насчитывается более
               14&nbsp;офисов
               по&nbsp;всей стране и&nbsp;20&nbsp;городов присутствия.</p>
 
-            <p class="visually-hidden">Мы&nbsp;стремимся к&nbsp;постоянному развитию и&nbsp;повышению уровня качества
+            <p data-expandable-item>Мы&nbsp;стремимся к&nbsp;постоянному развитию и&nbsp;повышению уровня качества
               продукции, производимой внутри
               компании. Использование инновационных технологий помогает экономить деньги и&nbsp;время наших
               клиентов.</p>
-            <button class="about__btn btn" type="button">Подробнее</button>
+            <button class="about__btn btn" type="button" data-expandable-button>
+              <span data-expandable-button-folded>Подробнее</span>
+              <span data-expandable-button-expanded>Свернуть</span>
+            </button>
           </div>
         </div>
       </div>

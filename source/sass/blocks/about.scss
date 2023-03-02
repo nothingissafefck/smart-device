@@ -19,6 +19,11 @@
   font-size: 36px;
   line-height: 51px;
   color: variables.$color-pearl;
+
+  @media (max-width: variables.$vp-max-mobile) {
+    font-size: 28px;
+    line-height: 40px;
+  }
 }
 
 .about p {
@@ -28,6 +33,11 @@
   font-size: 16px;
   line-height: 21px;
   color: variables.$color-pearl;
+
+  @media (max-width: variables.$vp-max-mobile) {
+    font-size: 14px;
+    line-height: 19px;
+  }
 }
 
 .about__btn {

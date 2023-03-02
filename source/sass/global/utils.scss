@@ -7,7 +7,7 @@
   flex-direction: column;
   min-height: 100vh;
   /* stylelint-disable-next-line */
-  min-height: calc(100 * var(--vh, 1vh));
+  //min-height: calc(100 * var(--vh, 1vh));
 
   .header,
   .footer {
@@ -48,7 +48,7 @@
 
 .no-scrollbar {
   -ms-overflow-style: none;
-  scrollbar-width: none;
+  //scrollbar-width: none;
 
   &::-webkit-scrollbar {
     display: none;
@@ -122,4 +122,17 @@
       display: none;
     }
   }
+}
+
+// Для блока about со скрываемым текстом
+[data-expandable]:not(.is-expanded) [data-expandable-item] {
+  display: none;
+}
+
+[data-expandable].is-expanded [data-expandable-button-folded] {
+  display: none;
+}
+
+[data-expandable]:not(.is-expanded) [data-expandable-button-expanded] {
+  display: none;
 }
