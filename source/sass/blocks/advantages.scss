@@ -11,6 +11,11 @@
   row-gap: 30px;
   margin: 0;
   padding: 0;
+
+  @media (max-width: variables.$vp-max-mobile) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .advantages__item {
