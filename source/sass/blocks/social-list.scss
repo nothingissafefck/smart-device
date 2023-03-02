@@ -5,16 +5,25 @@
   align-items: flex-start;
   justify-content: flex-start;
 
-  @media (min-width: variables.$vp-max-mobile) {
+  @media (max-width: variables.$vp-max-tablet) {
     display: flex;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+  }
+
+  @media (max-width: variables.$vp-max-mobile) {
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
 .social-list__content {
+  display: flex;
+  flex-direction: row;
   margin-left: 0;
 
-  @media (min-width: variables.$vp-max-mobile) {
+  @media (max-width: variables.$vp-max-tablet) {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;

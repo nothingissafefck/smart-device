@@ -75,8 +75,51 @@
   color: variables.$color-default-white;
 }
 
-.hidden-tablet {
+.hidden-max-desktop {
   @media (max-width: variables.$vp-max-tablet) {
     display: none;
+  }
+}
+
+.hidden-min-desktop {
+  @media (min-width: variables.$vp-1024) {
+    display: none;
+  }
+}
+
+.hidden-max-tablet {
+  @media (max-width: variables.$vp-max-mobile) {
+    display: none;
+  }
+}
+
+.hidden-min-tablet {
+  @media (min-width: variables.$vp-768) {
+    display: none;
+  }
+}
+
+// Accordion
+@media (max-width: variables.$vp-max-mobile) {
+  [data-accordion-item] {
+    position: relative;
+  }
+
+  [data-accordion-button] {
+    position: absolute;
+    top: 15px;
+    right: 0;
+  }
+
+  [data-accordion-item].is-open {
+    [data-accordion-button]::before {
+      display: none;
+    }
+  }
+
+  [data-accordion-item]:not(.is-open) {
+    [data-accordion-content] {
+      display: none;
+    }
   }
 }

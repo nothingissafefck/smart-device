@@ -26,7 +26,7 @@
               <svg aria-hidden="true" focusable="false" width="20" height="20">
                 <use href="img/sprite.svg#icon-email"></use>
               </svg>
-              <span class="header__link-text hidden-tablet">info@sd.ru</span>
+              <span class="header__link-text hidden-max-desktop">info@sd.ru</span>
               <span class="visually-hidden">Написать письмо на e-mail.</span>
             </a>
           </li>
@@ -36,22 +36,43 @@
               <svg aria-hidden="true" focusable="false" width="20" height="20">
                 <use href="img/sprite.svg#icon-phone"></use>
               </svg>
-              <span class="header__link-text hidden-tablet">+7 (495) 000 52 52</span>
+              <span class="header__link-text hidden-max-desktop">+7 (495) 000 52 52</span>
               <span class="visually-hidden">Позвонить в магазин.</span>
             </a>
           </li>
         </ul>
 
-        <a class="header__btn btn hidden-tablet" href="#">Заказать звонок</a>
+        <a class="header__btn btn hidden-max-desktop" href="#">Заказать звонок</a>
       </div>
     </div>
   </header>
 
-  <main></main>
+  <main>
+    <section class="hero">
+      <h1 class="visually-hidden">Smart Device - производство, монтаж и поставка комплектующих для печатных плат.</h1>
+      <picture>
+        <source type="image/webp" media="(max-width: 767px)" srcset="img/background-mobile.webp 1x, img/background-mobile2x.webp 2x">
+        <source type="image/webp" media="(max-width: 1023px)" srcset="img/background-tablet.webp 1x, img/background-tablet2x.webp 2x">
+        <source type="image/webp" srcset="img/background-desktop.webp 1x, img/background-desktop2x.webp 2x">
+        <source media="(max-width: 767px)" srcset="img/background-mobile.png 1x, img/background-mobile2x.png 2x">
+        <source media="(max-width: 1023px)" srcset="img/background-tablet.png 1x, img/background-tablet2x.png 2x">
+        <img src="img/background-desktop.png" width="1920" height="880" alt="Печатные платы.">
+      </picture>
+
+      <div class="hero__content">
+        <h2>Печатные платы</h2>
+        <p>Производство и&nbsp;монтаж, поставка комплектующих, блоков и&nbsp;модулей</p>
+        <a class="hero__link-btn btn" href="#">
+          <span class="hidden-max-tablet">Получить бесплатную консультацию</span>
+          <span class="hidden-min-tablet">Бесплатная консультация</span>
+        </a>
+      </div>
+    </section>
+  </main>
 
   <footer class="footer">
     <div class="container">
-      <div class="footer__container">
+      <div class="footer__container" data-accordion>
         <div class="footer__social-container social-list">
           <a href="index.html">
             <img class="footer__logo" src="img/logo.svg" width="215" height="55" alt="Логотип интернет-магазина печатных плат Smart Device.">
@@ -87,14 +108,14 @@
           </ul>
         </div>
 
-        <nav class="footer__navigation">
+        <nav class="footer__navigation" data-accordion-item>
           <h4>Разделы сайта</h4>
 
-          <button class="footer__btn" type="button">
+          <button class="footer__btn" type="button" data-accordion-button>
             <span class="visually-hidden">Развернуть меню.</span>
           </button>
 
-          <ul class="footer__navigation-links reset-list">
+          <ul class="footer__navigation-links reset-list" data-accordion-content>
             <li class="footer__navigation-item footer__link-item">
               <a class="footer__navigation-link page-link" href="#">О компании</a>
             </li>
@@ -112,7 +133,7 @@
             </li>
           </ul>
 
-          <ul class="footer__navigation-links reset-list">
+          <ul class="footer__navigation-links reset-list" data-accordion-content>
             <li class="footer__navigation-item footer__link-item">
               <a class="footer__navigation-link page-link" href="#">Комплектующие</a>
             </li>
@@ -127,18 +148,18 @@
           </ul>
         </nav>
 
-        <div class="footer__address-wrapper">
+        <div class="footer__address-wrapper" data-accordion-item>
           <h4>Наш офис</h4>
 
-          <button class="footer__btn" type="button">
+          <button class="footer__btn" type="button" data-accordion-button>
             <span class="visually-hidden">Развернуть меню.</span>
           </button>
 
-          <address class="footer__address">
-            <span class="footer__location">г.&nbsp;Мытищи, Олимпийский проспект,&nbsp;д.10</span>
-            <a class="footer__phone page-link" href="tel:+74955894050">+7 (495) 589-40-50</a>
-            <a class="footer__phone page-link" href="tel:+79253895829">+7 (925) 389-58-29</a>
-            <a class="footer__phone page-link" href="tel:+79253647813">+7 (925) 364-78-13</a>
+          <address class="footer__address" data-accordion-content>
+            <span class="footer__location">г.&nbsp;Мытищи, Олимпийский проспект, д.10</span>
+            <a class="footer__phone footer__navigation-link page-link" href="tel:+74955894050">+7 (495) 589-40-50</a>
+            <a class="footer__phone footer__navigation-link page-link" href="tel:+79253895829">+7 (925) 389-58-29</a>
+            <a class="footer__phone footer__navigation-link page-link" href="tel:+79253647813">+7 (925) 364-78-13</a>
           </address>
         </div>
       </div>
