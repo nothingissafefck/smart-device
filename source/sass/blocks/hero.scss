@@ -1,0 +1,62 @@
+@use "../variables";
+
+.hero {
+  position: relative;
+  padding: 0 0 20px;
+  overflow: hidden;
+  background: linear-gradient(180deg, rgba(variables.$color-pearl, 0.7) 71.72%, rgba(variables.$color-pearl, 0) 100%);
+}
+
+.hero__image {
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+}
+
+.hero__image img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero__content {
+  padding-top: 304px;
+  padding-left: 125px;
+  padding-bottom: 260px;
+}
+
+.hero__content h2 {
+  margin: 0 0 32px;
+  font-family: variables.$ff-roboto-condensed;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  color: variables.$color-alice-blue;
+  text-transform: uppercase;
+}
+
+.hero__content p {
+  max-width: 620px;
+  margin: 0 0 47px;
+  font-family: variables.$ff-pt-mono;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 34px;
+  text-transform: lowercase;
+  color: variables.$color-alice-blue;
+}
+
+.hero__link-btn {
+  margin: 0;
+  padding: 15px 27px 19px;
+  border: none;
+  border-radius: 3px;
+  font-family: variables.$ff-roboto-condensed;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+  color: variables.$color-alice-blue;
+  background-color: variables.$color-sky-blue;
+  text-transform: uppercase;
+}
