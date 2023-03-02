@@ -1,0 +1,45 @@
+@use "../variables";
+
+.about {
+  margin-bottom: 100px;
+}
+
+.about__image {
+  margin-right: 100px;
+}
+
+.about__container {
+  display: flex;
+}
+
+.about h2 {
+  margin-bottom: 15px;
+  font-family: variables.$ff-roboto-condensed;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: variables.$color-pearl;
+}
+
+.about p {
+  margin-bottom: 20px;
+  font-family: variables.$ff-pt-mono;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: variables.$color-pearl;
+}
+
+.about__btn {
+  padding: 12px 51px;
+  border: 1px solid variables.$color-sky-blue;
+  border-radius: 3px;
+  font-family: variables.$ff-roboto-condensed;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  color: variables.$color-sky-blue;
+  background-color: variables.$color-default-white;
+  text-transform: uppercase;
+}

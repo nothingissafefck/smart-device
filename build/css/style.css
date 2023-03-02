@@ -844,6 +844,52 @@ button,
   line-height: 21px;
 }
 
+.about {
+  margin-bottom: 100px;
+}
+
+.about__image {
+  margin-right: 100px;
+}
+
+.about__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about h2 {
+  margin-bottom: 15px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: #041827;
+}
+
+.about p {
+  margin-bottom: 20px;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #041827;
+}
+
+.about__btn {
+  padding: 12px 51px;
+  border: 1px solid #00b2ff;
+  border-radius: 3px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  color: #00b2ff;
+  background-color: #ffffff;
+  text-transform: uppercase;
+}
+
 .footer {
   background-color: #041827;
 }
