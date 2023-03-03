@@ -11,9 +11,10 @@
 
 .header__container {
   display: flex;
+  padding-right: 60px;
 
-  @media (max-width: variables.$vp-max-mobile) {
-    padding: 0 10px;
+  @media (max-width: variables.$vp-max-tablet) {
+    padding: 0;
   }
 }
 
@@ -34,13 +35,19 @@
 
 .header__list {
   display: flex;
-  justify-content: center;
-  column-gap: 30px;
+  padding-left: 160px;
+  column-gap: 120px;
   flex-grow: 1;
 
   @media (max-width: variables.$vp-max-tablet) {
     justify-content: flex-end;
     column-gap: 0;
+    padding-right: 10px;
+  }
+
+  @media (max-width: variables.$vp-max-mobile) {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 

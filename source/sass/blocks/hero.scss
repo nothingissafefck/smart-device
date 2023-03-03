@@ -28,25 +28,19 @@
 }
 
 .hero__content {
-  padding-top: 304px;
-  padding-left: 125px;
-  padding-bottom: 260px;
+  padding: 304px 0 260px 125px;
 
   @media (max-width: variables.$vp-max-tablet) {
-    padding-top: 180px;
-    padding-left: 27px;
-    padding-bottom: 205px;
+    padding: 180px 0 185px;
   }
 
   @media (max-width: variables.$vp-max-mobile) {
-    padding-top: 150px;
-    padding-left: 10px;
-    padding-bottom: 170px;
+    padding: 150px 0 170px;
   }
 }
 
 .hero__content h2 {
-  margin: 0 0 2px;
+  margin: 0 0 32px;
   font-family: variables.$ff-roboto-condensed;
   font-weight: 700;
   font-size: 80px;
@@ -56,6 +50,7 @@
   text-transform: uppercase;
 
   @media (max-width: variables.$vp-max-tablet) {
+    margin-bottom: 0;
     font-size: 64px;
     line-height: 75px;
   }
@@ -78,7 +73,7 @@
   color: variables.$color-alice-blue;
 
   @media (max-width: variables.$vp-max-tablet) {
-    margin-bottom: 55px;
+    margin-bottom: 57px;
   }
 
   @media (max-width: variables.$vp-max-mobile) {
@@ -100,9 +95,16 @@
   letter-spacing: 0.05em;
   color: variables.$color-alice-blue;
   background-color: variables.$color-sky-blue;
+  white-space: nowrap;
   text-transform: uppercase;
 
+  @media (max-width: variables.$vp-max-tablet) {
+    margin-left: 45px;
+  }
+
   @media (max-width: variables.$vp-max-mobile) {
+    width: 100%;
+    margin-left: 0;
     padding: 12px 37px;
     font-size: 14px;
     line-height: 16px;

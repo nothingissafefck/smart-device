@@ -6,19 +6,29 @@
 
 .about__image {
   margin-right: 100px;
+  object-fit: contain;
+
+  @media (max-width: variables.$vp-max-tablet) {
+    margin-right: 25px;
+  }
 }
 
 .about__container {
   display: flex;
+  align-items: flex-start;
 }
 
 .about h2 {
-  margin-bottom: 15px;
+  margin: 0 0 12px;
   font-family: variables.$ff-roboto-condensed;
   font-weight: 400;
   font-size: 36px;
   line-height: 51px;
   color: variables.$color-pearl;
+
+  @media (max-width: variables.$vp-max-tablet) {
+    margin-bottom: 12px;
+  }
 
   @media (max-width: variables.$vp-max-mobile) {
     font-size: 28px;
@@ -27,21 +37,38 @@
 }
 
 .about p {
-  margin-bottom: 20px;
+  margin: 23px 0 0;
   font-family: variables.$ff-pt-mono;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
   color: variables.$color-pearl;
 
+  &:first-of-type {
+    margin-top: 0;
+  }
+
+  @media (max-width: variables.$vp-max-tablet) {
+    line-height: 21.4px;
+  }
+
   @media (max-width: variables.$vp-max-mobile) {
+    margin-top: 18px;
     font-size: 14px;
     line-height: 19px;
   }
 }
 
+.about__description-text {
+  margin-bottom: 43px;
+
+  @media (max-width: variables.$vp-max-tablet) {
+    margin-bottom: 19px;
+  }
+}
+
 .about__btn {
-  padding: 12px 51px;
+  padding: 14px 50px;
   border: 1px solid variables.$color-sky-blue;
   border-radius: 3px;
   font-family: variables.$ff-roboto-condensed;
