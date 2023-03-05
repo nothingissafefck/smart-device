@@ -124,7 +124,8 @@
             <h2>О компании</h2>
 
             <div class="about__description-text">
-              <p>Мы&nbsp;поставляем электронные комплектующие, производим печатные платы и&nbsp;предоставляем мировые технологии
+              <p>Мы&nbsp;поставляем электронные комплектующие, производим печатные платы и&nbsp;предоставляем мировые
+                технологии
                 с 1997 года. Выполняем срочные заказы и пилотные образцы до&nbsp;10&nbsp;дней.</p>
 
               <p>Наши поставщики&nbsp;&mdash;
@@ -216,43 +217,45 @@
     </section>
 
     <section class="form">
-      <img class="form__image" src="img/paper-airplane.png" width="510" height="285" alt="Бумажный самолетик.">
-
-      <div class="form__container">
-        <h2>Остались вопросы? Задайте их нам!</h2>
-
-        <p>Мы проконсультируем Вас бесплатно</p>
-
-        <form action="https://echo.htmlacademy.ru/" method="get">
+      <div class="container">
+        <div class="form__container">
           <div class="form__wrapper">
-            <label>
-              <input type="text" name="name" placeholder="Имя" required>
-              <span class="visually-hidden">Имя</span>
-            </label>
+            <img class="form__image" src="img/paper-airplane.png" width="510" height="285" alt="Бумажный самолетик.">
 
-            <label>
-              <input type="tel" name="phone" placeholder="Телефон" required>
-              <span class="visually-hidden">Телефон</span>
-            </label>
+            <h2>Остались вопросы? Задайте их нам!</h2>
 
-            <div class="form__textarea">
+            <p>Мы проконсультируем Вас бесплатно</p>
+
+            <form action="https://echo.htmlacademy.ru/" method="get">
               <label>
-                <textarea name="question" placeholder="Ваш вопрос"></textarea>
-                <span class="visually-hidden">Ваш вопрос</span>
+                <input type="text" name="name" placeholder="Имя" required>
+                <span class="visually-hidden">Имя</span>
               </label>
-            </div>
 
-            <button class="form__btn btn" type="submit">Задать вопрос</button>
-
-            <div class="form__checkbox-wrapper">
               <label>
-                <input type="checkbox" name="agreement" required checked>
-                <span class="form__checkbox-icon"></span>
-                <span class="form__agreement">Я&nbsp;согласен на&nbsp;обработку персональных данных</span>
+                <input type="tel" name="phone" placeholder="Телефон" required>
+                <span class="visually-hidden">Телефон</span>
               </label>
-            </div>
+
+              <div class="form__textarea">
+                <label>
+                  <textarea name="question" placeholder="Ваш вопрос"></textarea>
+                  <span class="visually-hidden">Ваш вопрос</span>
+                </label>
+              </div>
+
+              <button class="form__btn btn" type="submit">Задать вопрос</button>
+
+              <div class="form__checkbox-wrapper">
+                <label>
+                  <input type="checkbox" name="agreement" required checked>
+                  <span class="form__checkbox-icon"></span>
+                  <span class="form__agreement">Я&nbsp;согласен на&nbsp;обработку персональных данных</span>
+                </label>
+              </div>
+            </form>
           </div>
-        </form>
+        </div>
       </div>
     </section>
   </main>

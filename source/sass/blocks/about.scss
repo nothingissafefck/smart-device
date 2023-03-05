@@ -2,6 +2,10 @@
 
 .about {
   margin-bottom: 100px;
+
+  @media (max-width: variables.$vp-max-tablet) {
+    margin-bottom: 79px;
+  }
 }
 
 .about__image {

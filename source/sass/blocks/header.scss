@@ -13,7 +13,7 @@
   display: flex;
   padding-right: 60px;
 
-  @media (max-width: variables.$vp-max-tablet) {
+  @media (max-width: variables.$vp-max-desktop) {
     padding: 0;
   }
 }
@@ -38,6 +38,11 @@
   padding-left: 160px;
   column-gap: 120px;
   flex-grow: 1;
+
+  @media (max-width: variables.$vp-max-desktop) {
+    padding-left: 80px;
+    column-gap: 80px;
+  }
 
   @media (max-width: variables.$vp-max-tablet) {
     justify-content: flex-end;
