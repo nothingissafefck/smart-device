@@ -63,7 +63,7 @@
         <div class="hero__content">
           <h2>Печатные платы</h2>
           <p>Производство и&nbsp;монтаж, поставка комплектующих, блоков и&nbsp;модулей</p>
-          <a class="hero__link-btn btn" href="#">
+          <a class="hero__link-btn btn" href="#form">
             <span class="hidden-max-tablet">Получить бесплатную консультацию</span>
             <span class="hidden-min-tablet">Бесплатная консультация</span>
           </a>
@@ -216,7 +216,7 @@
       </div>
     </section>
 
-    <section class="form">
+    <section class="form" id="form">
       <div class="container">
         <div class="form__container">
           <div class="form__wrapper">
@@ -355,6 +355,51 @@
       </div>
     </div>
   </footer>
+</div>
+
+<div class="modal modal--fit-content">
+  <div class="modal__wrapper">
+    <div class="modal__overlay"></div>
+
+    <div class="modal__content">
+      <div class="modal__close-btn"></div>
+
+      <div class="">
+        <h2>Закажите звонок</h2>
+
+        <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+
+        <form action="https://echo.htmlacademy.ru/" method="get">
+          <label>
+            <input type="text" name="name" placeholder="Имя" required>
+            <span class="visually-hidden">Имя</span>
+          </label>
+
+          <label>
+            <input type="tel" name="phone" placeholder="Телефон" required>
+            <span class="visually-hidden">Телефон</span>
+          </label>
+
+          <div class="">
+            <label>
+              <textarea name="question" placeholder="Ваш вопрос"></textarea>
+              <span class="visually-hidden">Ваш вопрос</span>
+            </label>
+          </div>
+
+          <button class="" type="submit">Задать вопрос</button>
+
+          <div class="">
+            <label>
+              <input type="checkbox" name="agreement" required checked>
+              <span class=""></span>
+              <span class="">Я&nbsp;согласен на&nbsp;обработку персональных данных</span>
+            </label>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 </div>
 
 <script src="js/vendor.min.js"></script>
