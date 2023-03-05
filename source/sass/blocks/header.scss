@@ -75,6 +75,7 @@
 .header__btn {
   margin: 35px 0 45px;
   padding: 10px 15px;
+  white-space: nowrap;
   border: 1px solid variables.$color-alice-blue;
   border-radius: 3px;
   font-family: variables.$ff-roboto-condensed;

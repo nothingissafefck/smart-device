@@ -716,6 +716,7 @@ button,
 .header__btn {
   margin: 35px 0 45px;
   padding: 10px 15px;
+  white-space: nowrap;
   border: 1px solid #f2f5f6;
   border-radius: 3px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -920,7 +921,7 @@ button,
 }
 
 .products__container h2 {
-  margin: 0 0 40px;
+  margin: 0 0 55px;
   padding-top: 65px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
@@ -937,6 +938,7 @@ button,
   -ms-flex-align: start;
   align-items: flex-start;
   gap: 85px;
+  padding-bottom: 140px;
 }
 
 .products__card {
@@ -947,7 +949,7 @@ button,
 .products__card h3 {
   position: absolute;
   top: 0;
-  padding: 50px 120px 0 40px;
+  padding: 45px 120px 0 40px;
   min-width: 230px;
   margin: 0;
   z-index: 1;
@@ -972,6 +974,166 @@ button,
   position: absolute;
   right: 0;
   bottom: 0;
+}
+
+.form {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  background-color: #00b2ff;
+}
+
+.form::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 50%;
+  height: 100%;
+  background-color: #041827;
+  opacity: 0.5;
+  -webkit-clip-path: polygon(0 0, 0 100%, 100% 0);
+  clip-path: polygon(0 0, 0 100%, 100% 0);
+}
+
+.form__container {
+  padding: 165px 360px 235px 0;
+}
+
+.form__container h2 {
+  margin: 0 0 12px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: #ffffff;
+}
+
+.form__container p {
+  margin: 0 0 36px;
+  padding-left: 5px;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.form__image {
+  position: absolute;
+  top: 246px;
+  left: 350px;
+  z-index: 1;
+}
+
+.form__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 275px 275px;
+  grid-template-columns: 275px 275px;
+  grid-gap: 20px 30px;
+  padding-left: 5px;
+}
+
+.form__wrapper input {
+  min-width: 275px;
+  min-height: 50px;
+  padding: 13px 15px 16px;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  background-color: rgba(4, 20, 39, 0.15);
+  border: none;
+  border-radius: 3px;
+}
+
+.form__textarea {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  margin-bottom: 12px;
+}
+
+.form__textarea textarea {
+  width: 100%;
+  min-height: 155px;
+  padding: 23px 15px;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  background-color: rgba(4, 20, 39, 0.15);
+  border: none;
+  border-radius: 3px;
+}
+
+.form__btn {
+  display: block;
+  padding: 16px 25px 10px;
+  max-width: 265px;
+  height: 45px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  background-color: #041827;
+  color: #ffffff;
+}
+
+.form__agreement {
+  padding-left: 11px;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+.form__checkbox-wrapper {
+  padding: 14px 10px;
+}
+
+.form__checkbox-wrapper input {
+  display: none;
+  padding-top: 8px;
+}
+
+.form__checkbox-wrapper input:checked + .form__checkbox-icon {
+  background-image: url("../../img/svg/icon-checkbox-checked.svg");
+}
+
+.form__checkbox-wrapper input:not(:checked) + .form__checkbox-icon {
+  background-image: url("../../img/svg/icon-checkbox-unchecked.svg");
+}
+
+.form__checkbox-wrapper label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.form__checkbox-icon {
+  display: inline-block;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 15px;
+  height: 15px;
 }
 
 .footer {
@@ -1806,6 +1968,27 @@ button,
   }
 }
 
+@media (max-width: 1439.99px) {
+  .form__container {
+    padding-right: 50px;
+  }
+
+  .form__image {
+    top: 180px;
+    left: 40px;
+  }
+}
+
+@media (max-width: 1279.99px) {
+  .form__container {
+    padding-right: 30px;
+  }
+
+  .form__image {
+    width: 350px;
+  }
+}
+
 @media (max-width: 1023.99px) {
   .hidden-max-desktop {
     display: none;
@@ -1931,6 +2114,15 @@ button,
   .products__card h3 {
     max-width: 135px;
     padding: 37px 120px 0 45px;
+  }
+
+  .form::before {
+    display: none;
+    background-color: transparent;
+  }
+
+  .form__image {
+    display: none;
   }
 
   .footer__container {

@@ -5,7 +5,7 @@
 }
 
 .products__container h2 {
-  margin: 0 0 40px;
+  margin: 0 0 55px;
   padding-top: 65px;
   font-family: variables.$ff-roboto-condensed;
   font-weight: 400;
@@ -28,6 +28,7 @@
   display: flex;
   align-items: flex-start;
   gap: 85px;
+  padding-bottom: 140px;
 
   @media (max-width: variables.$vp-max-tablet) {
     display: block;
@@ -50,7 +51,7 @@
 .products__card h3 {
   position: absolute;
   top: 0;
-  padding: 50px 120px 0 40px;
+  padding: 45px 120px 0 40px;
   min-width: 230px;
   margin: 0;
   z-index: 1;
