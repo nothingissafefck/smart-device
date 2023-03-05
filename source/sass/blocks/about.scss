@@ -79,4 +79,8 @@
   color: variables.$color-sky-blue;
   background-color: variables.$color-default-white;
   text-transform: uppercase;
+
+  @media (max-width: variables.$vp-max-mobile) {
+    padding: 8px 40px 10px;
+  }
 }

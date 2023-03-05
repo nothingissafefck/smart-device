@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Smart Device - производство, монтаж и комплектующие для печатных плат.">
   <title>Smart Device | умные решения</title>
   <link rel="stylesheet" href="css/style.min.css">
@@ -154,6 +154,67 @@
         </div>
       </div>
     </section>
+
+    <section class="products">
+      <div class="container">
+        <div class="products__container">
+          <h2 class="hidden-max-tablet">Smart Device предлагает следующие товары и&nbsp;услуги</h2>
+          <h2 class="hidden-min-tablet">Товары и&nbsp;услуги Smart&nbsp;Device</h2>
+          <ul class="reset-list">
+            <li class="products__card">
+              <picture class="products__image-wrapper">
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/mobile-card-production.webp 1x, img/mobile-card-production2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/tablet-card-production.webp 1x, img/tablet-card-production2x.webp 2x">
+                <source type="image/webp" srcset="img/desktop-card-production.webp 1x, img/desktop-card-production2x.webp 2x">
+                <source media="(max-width: 767px)" srcset="img/mobile-card-production.jpg 1x, img/mobile-card-production2x.jpg 2x">
+                <source media="(max-width: 1023px)" srcset="img/tablet-card-production.jpg 1x, img/tablet-card-production2x.jpg 2x">
+                <img src="img/desktop-card-production.jpg" srcset="img/desktop-card-production2x.jpg 2x" width="350" height="650" alt="Фото платы.">
+              </picture>
+              <h3>Производство печатных&nbsp;плат</h3>
+              <a href="#">
+                <svg class="products__icon" aria-hidden="true" focusable="false" width="60" height="60">
+                  <use href="img/sprite.svg#icon-arrow-right"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="products__card">
+              <picture class="products__image-wrapper">
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/mobile-card-assembly.webp 1x, img/mobile-card-assembly2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/tablet-card-assembly.webp 1x, img/tablet-card-assembly2x.webp 2x">
+                <source type="image/webp" srcset="img/desktop-card-assembly.webp 1x, img/desktop-card-assembly2x.webp 2x">
+                <source media="(max-width: 767px)" srcset="img/mobile-card-assembly.jpg 1x, img/mobile-card-assembly2x.jpg 2x">
+                <source media="(max-width: 1023px)" srcset="img/tablet-card-assembly.jpg 1x, img/tablet-card-assembly2x.jpg 2x">
+                <img src="img/desktop-card-assembly.jpg" srcset="img/desktop-card-assembly2x.jpg 2x" width="350" height="650" alt="Фото платы.">
+              </picture>
+              <h3>Монтаж печатных&nbsp;плат</h3>
+              <a href="#">
+                <svg class="products__icon" aria-hidden="true" focusable="false" width="60" height="60">
+                  <use href="img/sprite.svg#icon-arrow-right"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="products__card">
+              <picture class="products__image-wrapper">
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/mobile-card-accessories.webp 1x, img/mobile-card-accessories2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/tablet-card-accessories.webp 1x, img/tablet-card-accessories2x.webp 2x">
+                <source type="image/webp" srcset="img/desktop-card-accessories.webp 1x, img/desktop-card-accessories2x.webp 2x">
+                <source media="(max-width: 767px)" srcset="img/mobile-card-accessories.jpg 1x, img/mobile-card-accessories2x.jpg 2x">
+                <source media="(max-width: 1023px)" srcset="img/tablet-card-accessories.jpg 1x, img/tablet-card-accessories2x.jpg 2x">
+                <img src="img/desktop-card-accessories.jpg" srcset="img/desktop-card-accessories2x.jpg 2x" width="350" height="650" alt="Фото платы.">
+              </picture>
+              <h3>Комплектующие для&nbsp;светотехники</h3>
+              <a href="#">
+                <svg class="products__icon" aria-hidden="true" focusable="false" width="60" height="60">
+                  <use href="img/sprite.svg#icon-arrow-right"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
@@ -234,7 +295,7 @@
           </ul>
         </nav>
 
-        <div class="footer__address-wrapper is-open" data-accordion-item>
+        <div class="footer__address-wrapper" data-accordion-item>
           <h4>Наш офис</h4>
 
           <button class="footer__btn" type="button" data-accordion-button>
