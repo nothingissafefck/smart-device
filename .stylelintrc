@@ -12,7 +12,8 @@
           "for",
           "include",
           "if",
-          "use"
+          "use",
+          "mixin"
         ]
       }
     ]

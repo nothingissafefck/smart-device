@@ -109,4 +109,13 @@
     font-size: 14px;
     line-height: 16px;
   }
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }

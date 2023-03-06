@@ -16,9 +16,9 @@
   transform: scale(1.2);
   visibility: hidden;
   opacity: 0;
-  transition: opacity variables.$trans-modal,
-    transform variables.$trans-modal,
-    visibility variables.$trans-modal;
+  //transition: opacity variables.$trans-modal,
+  //transform variables.$trans-modal,
+  //visibility variables.$trans-modal;
   pointer-events: none;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -55,7 +55,7 @@
     position: relative;
     width: 600px;
     padding: 40px;
-    background-color: variables.$color-default-white;
+    background-color: variables.$color-sky-blue;
 
     @include mixins.vp-767 {
       width: 100%;
@@ -106,4 +106,66 @@
     opacity: 1;
     pointer-events: auto;
   }
+}
+
+.modal h2 {
+  margin: 0 0 12px;
+  font-family: variables.$ff-roboto-condensed;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: variables.$color-default-white;
+}
+
+.modal p {
+  margin: 0 0 36px;
+  padding-left: 5px;
+  font-family: variables.$ff-pt-mono;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: variables.$color-default-white;
+}
+
+.modal input {
+  min-width: 275px;
+  min-height: 50px;
+  padding: 13px 15px 16px;
+  font-family: variables.$ff-pt-mono;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: variables.$color-default-white;
+  background-color: variables.$color-pearl-fade;
+  border: none;
+  border-radius: 3px;
+}
+
+.modal textarea {
+  width: 100%;
+  padding: 23px 15px;
+  font-family: variables.$ff-pt-mono;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: variables.$color-default-white;
+  background-color: variables.$color-pearl-fade;
+  border: none;
+  border-radius: 3px;
+}
+
+.modal__btn {
+  display: block;
+  padding: 16px 25px 10px;
+  max-width: 265px;
+  height: 45px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-family: variables.$ff-roboto-condensed;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  background-color: variables.$color-pearl;
+  color: variables.$color-default-white;
 }

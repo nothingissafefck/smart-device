@@ -687,6 +687,15 @@ html {
   padding: 30px 0 35px;
 }
 
+.header__logo:hover,
+.header__logo:focus {
+  opacity: 0.8;
+}
+
+.header__logo:active {
+  opacity: 0.6;
+}
+
 .header__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -711,6 +720,15 @@ html {
   line-height: 18px;
 }
 
+.header__link:hover,
+.header__link:focus {
+  opacity: 0.8;
+}
+
+.header__link:active {
+  opacity: 0.6;
+}
+
 .header__link-text {
   margin-left: 15px;
   font-family: "PT Mono", "Arial", sans-serif;
@@ -730,6 +748,15 @@ html {
   letter-spacing: 0.05em;
   color: #f2f5f6;
   text-transform: uppercase;
+}
+
+.header__btn:hover,
+.header__btn:focus {
+  opacity: 0.8;
+}
+
+.header__btn:active {
+  opacity: 0.6;
 }
 
 .hero {
@@ -796,6 +823,15 @@ html {
   text-transform: uppercase;
 }
 
+.hero__link-btn:hover,
+.hero__link-btn:focus {
+  opacity: 0.8;
+}
+
+.hero__link-btn:active {
+  opacity: 0.6;
+}
+
 .advantages {
   margin-bottom: 120px;
 }
@@ -824,13 +860,25 @@ html {
   box-shadow: -5px 0 0 0 #00b2ff;
 }
 
-.advantages__item:first-child {
+.advantages__item h3 {
+  color: #00b2ff;
+}
+
+.advantages__item svg {
+  color: #00b2ff;
+}
+
+.advantages__item:hover {
   border: 1px solid transparent;
   background-color: #00b2ff;
 }
 
-.advantages__item:first-child h3,
-.advantages__item:first-child p {
+.advantages__item:hover h3,
+.advantages__item:hover p {
+  color: #f2f5f6;
+}
+
+.advantages__item:hover svg {
   color: #f2f5f6;
 }
 
@@ -920,6 +968,17 @@ html {
   text-transform: uppercase;
 }
 
+.about__btn:hover,
+.about__btn:focus {
+  background-color: rgba(4, 20, 39, 0.15);
+  opacity: 0.8;
+}
+
+.about__btn:active {
+  background-color: rgba(4, 20, 39, 0.15);
+  opacity: 0.6;
+}
+
 .products {
   background-color: #041827;
   padding-top: 65px;
@@ -978,6 +1037,17 @@ html {
   position: absolute;
   right: 0;
   bottom: 0;
+}
+
+.products__icon:hover,
+.products__icon:focus {
+  background-color: rgba(4, 20, 39, 0.15);
+  opacity: 0.8;
+}
+
+.products__icon:active {
+  background-color: rgba(4, 20, 39, 0.15);
+  opacity: 0.6;
 }
 
 .form {
@@ -1098,6 +1168,15 @@ html {
   color: #ffffff;
 }
 
+.form__btn:hover,
+.form__btn:focus {
+  opacity: 0.8;
+}
+
+.form__btn:active {
+  opacity: 0.6;
+}
+
 .form__agreement {
   padding-left: 11px;
   font-family: "PT Mono", "Arial", sans-serif;
@@ -1112,6 +1191,10 @@ html {
   padding: 14px 10px;
 }
 
+.form__checkbox-wrapper span {
+  cursor: pointer;
+}
+
 .form__checkbox-wrapper input {
   display: none;
   padding-top: 8px;
@@ -1119,10 +1202,12 @@ html {
 
 .form__checkbox-wrapper input:checked + .form__checkbox-icon {
   background-image: url("../../img/svg/icon-checkbox-checked.svg");
+  cursor: pointer;
 }
 
 .form__checkbox-wrapper input:not(:checked) + .form__checkbox-icon {
   background-image: url("../../img/svg/icon-checkbox-unchecked.svg");
+  cursor: pointer;
 }
 
 .form__checkbox-wrapper label {
@@ -1169,6 +1254,15 @@ html {
 .footer__logo {
   display: block;
   margin-bottom: 35px;
+}
+
+.footer__logo:hover,
+.footer__logo:focus {
+  opacity: 0.8;
+}
+
+.footer__logo:active {
+  opacity: 0.6;
 }
 
 .footer__navigation,
@@ -1236,6 +1330,17 @@ html {
   opacity: 0.7;
 }
 
+.footer__navigation-link:hover,
+.footer__navigation-link:focus {
+  background-color: rgba(3, 16, 27, 0.7);
+  opacity: 0.8;
+}
+
+.footer__navigation-link:active {
+  background-color: rgba(3, 16, 27, 0.7);
+  opacity: 0.6;
+}
+
 .footer__address-wrapper h4 {
   margin-bottom: 22px;
 }
@@ -1254,6 +1359,17 @@ html {
 .footer__location {
   display: block;
   margin-bottom: 5px;
+}
+
+.footer__location:hover,
+.footer__location:focus {
+  background-color: rgba(3, 16, 27, 0.7);
+  opacity: 0.8;
+}
+
+.footer__location:active {
+  background-color: rgba(3, 16, 27, 0.7);
+  opacity: 0.6;
 }
 
 .footer__phone {
@@ -1288,6 +1404,17 @@ html {
   margin-left: 0;
 }
 
+.social-list__link:hover,
+.social-list__link:focus {
+  background-color: rgba(4, 20, 39, 0.15);
+  opacity: 0.8;
+}
+
+.social-list__link:active {
+  background-color: rgba(4, 20, 39, 0.15);
+  opacity: 0.6;
+}
+
 .modal {
   position: fixed;
   top: 0;
@@ -1310,11 +1437,6 @@ html {
   transform: scale(1.2);
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  -o-transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
   pointer-events: none;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -1355,7 +1477,7 @@ html {
   position: relative;
   width: 600px;
   padding: 40px;
-  background-color: #ffffff;
+  background-color: #00b2ff;
 }
 
 .modal__close-btn {
@@ -1398,6 +1520,68 @@ html {
   visibility: visible;
   opacity: 1;
   pointer-events: auto;
+}
+
+.modal h2 {
+  margin: 0 0 12px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: #ffffff;
+}
+
+.modal p {
+  margin: 0 0 36px;
+  padding-left: 5px;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.modal input {
+  min-width: 275px;
+  min-height: 50px;
+  padding: 13px 15px 16px;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  background-color: rgba(4, 20, 39, 0.15);
+  border: none;
+  border-radius: 3px;
+}
+
+.modal textarea {
+  width: 100%;
+  padding: 23px 15px;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  background-color: rgba(4, 20, 39, 0.15);
+  border: none;
+  border-radius: 3px;
+}
+
+.modal__btn {
+  display: block;
+  padding: 16px 25px 10px;
+  max-width: 265px;
+  height: 45px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  background-color: #041827;
+  color: #ffffff;
 }
 
 .custom-input,

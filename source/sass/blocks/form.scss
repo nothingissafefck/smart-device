@@ -194,6 +194,15 @@
   @media (max-width: variables.$vp-max-mobile) {
     max-width: unset;
   }
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .form__agreement {
@@ -209,6 +218,10 @@
 .form__checkbox-wrapper {
   padding: 14px 10px;
 
+  span {
+    cursor: pointer;
+  }
+
   input {
     display: none;
     padding-top: 8px;
@@ -216,10 +229,12 @@
 
   input:checked + .form__checkbox-icon {
     background-image: url("../../img/svg/icon-checkbox-checked.svg");
+    cursor: pointer;
   }
 
   input:not(:checked) + .form__checkbox-icon {
     background-image: url("../../img/svg/icon-checkbox-unchecked.svg");
+    cursor: pointer;
   }
 
   @media (max-width: variables.$vp-max-tablet) {

@@ -28,4 +28,14 @@
 }
 
 .social-list__link {
+  &:hover,
+  &:focus {
+    background-color: variables.$color-pearl-fade;
+    opacity: 0.8;
+  }
+
+  &:active {
+    background-color: variables.$color-pearl-fade;
+    opacity: 0.6;
+  }
 }

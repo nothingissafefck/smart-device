@@ -87,4 +87,15 @@
   @media (max-width: variables.$vp-max-mobile) {
     padding: 8px 40px 10px;
   }
+
+  &:hover,
+  &:focus {
+    background-color: variables.$color-pearl-fade;
+    opacity: 0.8;
+  }
+
+  &:active {
+    background-color: variables.$color-pearl-fade;
+    opacity: 0.6;
+  }
 }

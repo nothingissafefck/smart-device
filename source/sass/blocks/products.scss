@@ -104,5 +104,16 @@
     width: 40px;
     height: 40px;
   }
+
+  &:hover,
+  &:focus {
+    background-color: variables.$color-pearl-fade;
+    opacity: 0.8;
+  }
+
+  &:active {
+    background-color: variables.$color-pearl-fade;
+    opacity: 0.6;
+  }
 }
 
