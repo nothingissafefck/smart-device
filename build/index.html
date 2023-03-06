@@ -53,7 +53,7 @@
           </li>
         </ul>
 
-        <a class="header__btn btn hidden-max-desktop" href="#">Заказать звонок</a>
+        <a class="header__btn btn hidden-max-desktop" href="#" data-open-modal="modal">Заказать звонок</a>
       </div>
     </div>
   </header>
@@ -140,10 +140,10 @@
                 с 1997 года. Выполняем срочные заказы и пилотные образцы до&nbsp;10&nbsp;дней.</p>
 
               <p>Наши поставщики&nbsp;&mdash;
-                мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и&nbsp;комплектующие
+                мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. <span class="hidden-max-tablet">Печатные платы и&nbsp;комплектующие
                 Service Devices применяются на&nbsp;предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ,
                 АвтоГАЗ),
-                МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
+                  МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span></p>
 
               <p data-expandable-item>Smart Device&nbsp;&mdash; это команда профессионалов. Через нас прошло более 1&nbsp;000&nbsp;000&nbsp;клиентов,
                 70% из&nbsp;которых продолжают сотрудничество по&nbsp;сей день. На&nbsp;данный момент насчитывается
@@ -368,14 +368,18 @@
   </footer>
 </div>
 
-<div class="modal modal--fit-content">
+<div class="modal" data-modal="modal">
   <div class="modal__wrapper">
     <div class="modal__overlay"></div>
 
     <div class="modal__content">
-      <div class="modal__close-btn"></div>
+      <div class="modal__close-btn" data-close-modal>
+        <svg aria-hidden="true" focusable="false" width="20" height="20">
+          <use href="img/sprite.svg#icon-close"></use>
+        </svg>
+      </div>
 
-      <div class="">
+      <div class="modal-form">
         <h2>Закажите звонок</h2>
 
         <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
@@ -393,17 +397,17 @@
 
           <div class="">
             <label>
-              <textarea name="question" placeholder="Ваш вопрос"></textarea>
+              <textarea name="question" placeholder="Ваш вопрос" rows="5"></textarea>
               <span class="visually-hidden">Ваш вопрос</span>
             </label>
           </div>
 
-          <button class="modal__btn btn" type="submit">Задать вопрос</button>
+          <button class="modal__btn btn" type="submit">Отправить</button>
 
-          <div class="">
+          <div class="modal__agreement">
             <label>
               <input type="checkbox" name="agreement" required checked>
-              <span class=""></span>
+              <span class="modal__checkbox-icon"></span>
               <span class="">Я&nbsp;согласен на&nbsp;обработку персональных данных</span>
             </label>
           </div>
