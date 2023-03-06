@@ -16,9 +16,6 @@
   transform: scale(1.2);
   visibility: hidden;
   opacity: 0;
-  //transition: opacity variables.$trans-modal,
-  //transform variables.$trans-modal,
-  //visibility variables.$trans-modal;
   pointer-events: none;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -136,6 +133,14 @@
   display: flex;
   flex-direction: column;
   row-gap: 20px;
+
+  .is-invalid input {
+    box-shadow: 0 0 0 1px variables.$color-invalid;
+  }
+
+  .is-valid input {
+    box-shadow: 0 0 0 1px variables.$color-valid;
+  }
 }
 
 .modal input {

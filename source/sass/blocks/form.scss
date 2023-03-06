@@ -124,6 +124,14 @@
     border-radius: 3px;
   }
 
+  .is-invalid input {
+    box-shadow: 0 0 0 1px variables.$color-invalid;
+  }
+
+  .is-valid input {
+    box-shadow: 0 0 0 1px variables.$color-valid;
+  }
+
   @media (max-width: variables.$vp-max-tablet) {
     grid-template-columns: 1fr 1fr;
     padding-left: 0;

@@ -17,6 +17,8 @@ $color-pearl-transparent: rgba(4, 24, 39, 0);
 $color-pearl-fade: rgba(4, 20, 39, 0.15);
 $color-alice-blue: #f2f5f6;
 $color-whisper: #ebebeb;
+$color-invalid: #d00f0f;
+$color-valid: #13b313;
 
 // Gradient
 
@@ -32,10 +34,10 @@ $ff-roboto-condensed: "Roboto Condensed", "Arial", sans-serif;
 
 // Animation
 
-$tf-default:                        ease;
-$trans-default:                     0.3s $tf-default;
-$trans-modal:                       0.6s cubic-bezier(0.55, 0, 0.1, 1);
-$trans-600:                         0.6s $tf-default;
+$tf-default: ease;
+$trans-default: 0.3s $tf-default;
+$trans-modal: 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+$trans-600: 0.6s $tf-default;
 
 // Viewports
 

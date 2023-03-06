@@ -230,20 +230,20 @@
     <section class="form" id="form">
       <div class="container">
         <div class="form__container">
-          <div class="form__wrapper">
+          <div class="form__wrapper" data-form-validate>
             <img class="form__image" src="img/paper-airplane.png" width="510" height="285" alt="Бумажный самолетик.">
 
             <h2>Остались вопросы? Задайте их нам!</h2>
 
             <p>Мы проконсультируем Вас бесплатно</p>
 
-            <form action="https://echo.htmlacademy.ru/" method="get">
-              <label>
+            <form action="https://echo.htmlacademy.ru/" method="post">
+              <label data-validate-type="text" data-required>
                 <input type="text" name="name" placeholder="Имя" required>
                 <span class="visually-hidden">Имя</span>
               </label>
 
-              <label>
+              <label data-validate-type="phone" data-required>
                 <input type="tel" name="phone" placeholder="Телефон" required>
                 <span class="visually-hidden">Телефон</span>
               </label>
@@ -258,7 +258,7 @@
               <button class="form__btn btn" type="submit">Задать вопрос</button>
 
               <div class="form__checkbox-wrapper">
-                <label>
+                <label data-validate-type="checkbox" data-required>
                   <input type="checkbox" name="agreement" required checked>
                   <span class="form__checkbox-icon"></span>
                   <span class="form__agreement">Я&nbsp;согласен на&nbsp;обработку персональных данных</span>
@@ -379,23 +379,23 @@
         </svg>
       </div>
 
-      <div class="modal-form">
+      <div data-form-validate>
         <h2>Закажите звонок</h2>
 
         <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
 
-        <form action="https://echo.htmlacademy.ru/" method="get">
-          <label>
+        <form action="https://echo.htmlacademy.ru/" method="post">
+          <label data-validate-type="text" data-required>
             <input type="text" name="name" placeholder="Имя" required>
             <span class="visually-hidden">Имя</span>
           </label>
 
-          <label>
+          <label data-validate-type="phone" data-required>
             <input type="tel" name="phone" placeholder="Телефон" required>
             <span class="visually-hidden">Телефон</span>
           </label>
 
-          <div class="">
+          <div>
             <label>
               <textarea name="question" placeholder="Ваш вопрос" rows="5"></textarea>
               <span class="visually-hidden">Ваш вопрос</span>
@@ -405,7 +405,7 @@
           <button class="modal__btn btn" type="submit">Отправить</button>
 
           <div class="modal__agreement">
-            <label>
+            <label data-validate-type="checkbox" data-required>
               <input type="checkbox" name="agreement" required checked>
               <span class="modal__checkbox-icon"></span>
               <span class="">Я&nbsp;согласен на&nbsp;обработку персональных данных</span>
