@@ -40,11 +40,59 @@
   box-shadow: -5px 0 0 0 variables.$color-sky-blue;
 
   h3 {
+    margin: 0 0 15px;
+    padding: 0;
+    font-family: variables.$ff-roboto-condensed;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
     color: variables.$color-sky-blue;
+
+    @media (max-width: variables.$vp-max-tablet) {
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: variables.$vp-max-mobile) {
+      margin-bottom: 6px;
+      font-size: 20px;
+    }
   }
 
   svg {
+    display: block;
+    margin-bottom: 21px;
+    width: 35px;
+    height: 35px;
     color: variables.$color-sky-blue;
+
+    @media (max-width: variables.$vp-max-tablet) {
+      margin-bottom: 15px;
+    }
+
+    @media (max-width: variables.$vp-max-mobile) {
+      margin-bottom: 13px;
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  p {
+    margin: 0 0 10px;
+    padding: 0;
+    color: variables.$color-pearl;
+    font-family: variables.$ff-pt-mono;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+
+    @media (max-width: variables.$vp-max-tablet) {
+      line-height: 21.5px;
+    }
+
+    @media (max-width: variables.$vp-max-mobile) {
+      font-size: 14px;
+      line-height: 19px;
+    }
   }
 
   &:hover {
@@ -102,60 +150,5 @@
         margin-bottom: 13px;
       }
     }
-  }
-}
-
-.advantages__item svg {
-  display: block;
-  margin-bottom: 21px;
-  width: 35px;
-  height: 35px;
-
-  @media (max-width: variables.$vp-max-tablet) {
-    margin-bottom: 15px;
-  }
-
-  @media (max-width: variables.$vp-max-mobile) {
-    margin-bottom: 13px;
-    width: 30px;
-    height: 30px;
-  }
-}
-
-.advantages__item h3 {
-  margin: 0 0 15px;
-  padding: 0;
-  font-family: variables.$ff-roboto-condensed;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 34px;
-  color: variables.$color-sky-blue;
-
-  @media (max-width: variables.$vp-max-tablet) {
-    margin-bottom: 10px;
-  }
-
-  @media (max-width: variables.$vp-max-mobile) {
-    margin-bottom: 6px;
-    font-size: 20px;
-  }
-}
-
-.advantages__item p {
-  margin: 0 0 10px;
-  padding: 0;
-  color: variables.$color-pearl;
-  font-family: variables.$ff-pt-mono;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21px;
-
-  @media (max-width: variables.$vp-max-tablet) {
-    line-height: 21.5px;
-  }
-
-  @media (max-width: variables.$vp-max-mobile) {
-    font-size: 14px;
-    line-height: 19px;
   }
 }

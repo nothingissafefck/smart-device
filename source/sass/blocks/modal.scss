@@ -63,8 +63,8 @@
 
   &__close-btn {
     position: absolute;
-    top: 22px;
-    right: 22px;
+    top: 15px;
+    right: 15px;
     z-index: 1;
     display: flex;
     align-items: center;
@@ -129,105 +129,28 @@
   color: variables.$color-default-white;
 }
 
-.modal form {
+.modal__form-container {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
-
-  .is-invalid input {
-    box-shadow: 0 0 0 1px variables.$color-invalid;
-  }
-
-  .is-valid input {
-    box-shadow: 0 0 0 1px variables.$color-valid;
-  }
 }
 
-.modal input {
-  width: 100%;
-  min-width: 275px;
-  min-height: 50px;
-  padding: 13px 15px 16px;
-  font-family: variables.$ff-pt-mono;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21px;
-  color: variables.$color-default-white;
-  background-color: variables.$color-pearl-fade;
-  border: none;
-  border-radius: 3px;
-
-  @media (max-width: variables.$vp-max-mobile) {
-    min-width: 0;
-  }
-}
-
-.modal textarea {
-  width: 100%;
-  margin-bottom: 3px;
-  padding: 23px 15px 27px;
-  font-family: variables.$ff-pt-mono;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21px;
-  color: variables.$color-default-white;
-  background-color: variables.$color-pearl-fade;
-  border: none;
-  border-radius: 3px;
-}
-
-.modal__btn {
-  display: block;
-  padding: 13px 25px 10px;
-  width: 100%;
-  height: 45px;
-  border-radius: 3px;
-  text-transform: uppercase;
-  font-family: variables.$ff-roboto-condensed;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 0.05em;
-  background-color: variables.$color-pearl;
-  color: variables.$color-default-white;
-}
-
-.modal__checkbox-icon {
-  display: inline-block;
-  flex-shrink: 0;
-  margin-right: 9px;
-  width: 15px;
-  height: 15px;
+.modal__form-textarea {
+  margin-bottom: 2px;
 }
 
 .modal__agreement {
+  padding: 0 10px;
   font-family: variables.$ff-pt-mono;
   font-size: 14px;
   line-height: 15.58px;
   color: variables.$color-default-white;
 
-  label {
-    display: flex;
-    align-items: center;
-    padding-left: 9px;
+  span::before {
+    top: 0;
   }
+}
 
-  span {
-    cursor: pointer;
-  }
-
-  input {
-    display: none;
-    padding-top: 8px;
-  }
-
-  input:checked + .modal__checkbox-icon {
-    background-image: url("../../img/svg/icon-checkbox-checked.svg");
-    cursor: pointer;
-  }
-
-  input:not(:checked) + .modal__checkbox-icon {
-    background-image: url("../../img/svg/icon-checkbox-unchecked.svg");
-    cursor: pointer;
-  }
+.modal__btn {
+  max-width: unset;
 }
