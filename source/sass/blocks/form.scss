@@ -1,4 +1,5 @@
 @use "../variables";
+@use "../mixins";
 
 .form {
   input {
@@ -105,7 +106,7 @@
       display: block;
       width: 15px;
       height: 15px;
-      background-image: url("../../img/svg/icon-checkbox-unchecked.svg");
+      background-image: url("../img/svg/icon-checkbox-unchecked.svg");
     }
   }
 
@@ -115,12 +116,12 @@
   }
 
   input {
-    display: none;
+    @include mixins.visually-hidden;
     padding-top: 8px;
   }
 
   input:checked + span::before {
-    background-image: url("../../img/svg/icon-checkbox-checked.svg");
+    background-image: url("../img/svg/icon-checkbox-checked.svg");
   }
 
   @media (max-width: variables.$vp-max-tablet) {

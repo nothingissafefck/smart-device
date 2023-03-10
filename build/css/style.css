@@ -565,7 +565,6 @@ html {
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 100vh;
-  /* stylelint-disable-next-line */
 }
 
 .wrapper .header,
@@ -612,7 +611,6 @@ html {
 }
 
 .no-transition {
-  /* stylelint-disable-next-line */
   -webkit-transition: none !important;
   -o-transition: none !important;
   transition: none !important;
@@ -1210,7 +1208,7 @@ html {
   display: block;
   width: 15px;
   height: 15px;
-  background-image: url("../../img/svg/icon-checkbox-unchecked.svg");
+  background-image: url("../img/svg/icon-checkbox-unchecked.svg");
 }
 
 .form__checkbox-wrapper label {
@@ -1223,12 +1221,22 @@ html {
 }
 
 .form__checkbox-wrapper input {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
   padding-top: 8px;
 }
 
 .form__checkbox-wrapper input:checked + span::before {
-  background-image: url("../../img/svg/icon-checkbox-checked.svg");
+  background-image: url("../img/svg/icon-checkbox-checked.svg");
 }
 
 .footer {
