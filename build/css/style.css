@@ -699,6 +699,8 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   padding-left: 160px;
   -webkit-column-gap: 120px;
   -moz-column-gap: 120px;
@@ -708,6 +710,10 @@ html {
   flex-grow: 1;
 }
 
+.header__item {
+  padding: 45px 0 55px;
+}
+
 .header__link {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -715,7 +721,6 @@ html {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 45px 0 55px;
   line-height: 18px;
 }
 
@@ -735,6 +740,7 @@ html {
 }
 
 .header__btn {
+  height: 40px;
   margin: 35px 0 45px;
   padding: 10px 15px;
   white-space: nowrap;
@@ -988,13 +994,11 @@ html {
 }
 
 .products ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  gap: 85px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 80px 85px;
 }
 
 .products__card {
@@ -1002,11 +1006,20 @@ html {
   display: block;
 }
 
+.products__card:hover,
+.products__card:focus {
+  opacity: 0.7;
+}
+
+.products__card:active {
+  opacity: 0.3;
+}
+
 .products__card h3 {
   position: absolute;
   top: 0;
-  padding: 45px 120px 0 40px;
-  min-width: 230px;
+  padding: 45px 40px 0 40px;
+  width: 240px;
   margin: 0;
   z-index: 1;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -1129,6 +1142,7 @@ html {
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
+  -webkit-text-fill-color: #ffffff;
   background-color: rgba(4, 20, 39, 0.15);
   border: none;
   border-radius: 3px;
@@ -1153,6 +1167,7 @@ html {
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
+  -webkit-text-fill-color: #ffffff;
   background-color: rgba(4, 20, 39, 0.15);
   border: none;
   border-radius: 3px;
@@ -1209,6 +1224,15 @@ html {
   width: 15px;
   height: 15px;
   background-image: url("../img/svg/icon-checkbox-unchecked.svg");
+}
+
+.form__checkbox-wrapper span:hover,
+.form__checkbox-wrapper span:focus {
+  opacity: 0.7;
+}
+
+.form__checkbox-wrapper span:active {
+  opacity: 0.3;
 }
 
 .form__checkbox-wrapper label {
@@ -1279,6 +1303,7 @@ html {
 
 .footer__navigation,
 .footer__address-wrapper {
+  position: relative;
   padding-top: 7px;
 }
 
@@ -1333,7 +1358,7 @@ html {
 }
 
 .footer__navigation-link {
-  display: block;
+  display: inline-block;
   padding: 4px 0;
   font-family: "PT Mono", "Arial", sans-serif;
   font-size: 16px;
@@ -1365,6 +1390,9 @@ html {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   font-style: normal;
 }
 
@@ -1405,15 +1433,11 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 215px;
   padding-left: 15px;
-}
-
-.social-list__item {
-  margin-left: 25px;
-}
-
-.social-list__item:first-of-type {
-  margin-left: 0;
+  -webkit-column-gap: 25px;
+  -moz-column-gap: 25px;
+  column-gap: 25px;
 }
 
 .social-list__link:hover,
@@ -1443,7 +1467,7 @@ html {
   flex-direction: column;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(3, 16, 27, 0.7);
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
@@ -1514,6 +1538,15 @@ html {
   border: none;
   color: #ffffff;
   cursor: pointer;
+}
+
+.modal__close-btn:hover,
+.modal__close-btn:focus {
+  opacity: 0.7;
+}
+
+.modal__close-btn:active {
+  opacity: 0.3;
 }
 
 .modal--responsive .modal__content {
@@ -1614,7 +1647,7 @@ html {
   }
 }
 
-@media (max-width: 1279.99px) {
+@media (max-width: 1279px) {
   .header__container {
     padding: 0;
   }
@@ -1628,7 +1661,7 @@ html {
 
   .feedback__image {
     top: 185px;
-    left: -375px;
+    left: 35px;
     width: 350px;
   }
 
@@ -1642,9 +1675,18 @@ html {
   }
 }
 
-@media (max-width: 1023.99px) {
+@media (max-width: 1023px) {
   .hidden-max-desktop {
     display: none;
+  }
+
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .header {
+    position: absolute;
   }
 
   .header__logo {
@@ -1659,6 +1701,10 @@ html {
     -moz-column-gap: 0;
     column-gap: 0;
     padding-right: 10px;
+  }
+
+  .header__item {
+    padding: 0;
   }
 
   .header__link {
@@ -1770,8 +1816,7 @@ html {
   }
 
   .products__card h3 {
-    max-width: 135px;
-    padding: 37px 120px 0 45px;
+    padding: 37px 45px 0 45px;
   }
 
   .feedback::before {
@@ -1789,11 +1834,13 @@ html {
   }
 
   .feedback__container {
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
+    display: block;
     padding-top: 45px;
     padding-bottom: 118px;
+  }
+
+  .feedback__form {
+    padding-right: 0;
   }
 
   .feedback__form-container {
@@ -1852,31 +1899,15 @@ html {
   }
 
   .social-list {
+    max-width: unset;
     padding-top: 10px;
     padding-left: 0;
   }
 }
 
-@media (max-width: 1023px) {
-  .container {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-}
-
-@media (max-width: 767.99px) {
+@media (max-width: 767px) {
   .hidden-max-tablet {
     display: none;
-  }
-
-  [data-accordion-item] {
-    position: relative;
-  }
-
-  [data-accordion-button] {
-    position: absolute;
-    top: 9px;
-    right: -11px;
   }
 
   [data-accordion-item].is-open [data-accordion-button]::before {
@@ -1885,6 +1916,11 @@ html {
 
   [data-accordion-item]:not(.is-open) [data-accordion-content] {
     display: none;
+  }
+
+  .container {
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
   .header__logo {
@@ -1993,6 +2029,7 @@ html {
 
   .about p {
     margin-top: 18px;
+    margin-bottom: -3px;
     font-size: 14px;
     line-height: 19px;
   }
@@ -2013,7 +2050,8 @@ html {
   }
 
   .products__card h3 {
-    padding: 26px 90px 0 30px;
+    width: 190px;
+    padding: 26px 30px 0 30px;
     font-size: 18px;
   }
 
@@ -2054,7 +2092,9 @@ html {
   }
 
   .form__textarea textarea {
+    margin-bottom: -25px;
     padding: 23px 15px;
+    min-height: 181px;
   }
 
   .form__btn {
@@ -2150,6 +2190,9 @@ html {
   }
 
   .footer__btn {
+    position: absolute;
+    top: 9px;
+    right: -11px;
     display: block;
     width: 40px;
     height: 40px;
@@ -2177,13 +2220,6 @@ html {
     -webkit-transform: translate(-50%, -50%) rotate(90deg);
     -ms-transform: translate(-50%, -50%) rotate(90deg);
     transform: translate(-50%, -50%) rotate(90deg);
-  }
-}
-
-@media (max-width: 767px) {
-  .container {
-    padding-left: 25px;
-    padding-right: 25px;
   }
 
   .modal__wrapper {

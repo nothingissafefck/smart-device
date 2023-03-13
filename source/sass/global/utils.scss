@@ -87,16 +87,6 @@ html {
 
 // Accordion
 @media (max-width: variables.$vp-max-mobile) {
-  [data-accordion-item] {
-    position: relative;
-  }
-
-  [data-accordion-button] {
-    position: absolute;
-    top: 9px;
-    right: -11px;
-  }
-
   [data-accordion-item].is-open {
     [data-accordion-button]::before {
       display: none;

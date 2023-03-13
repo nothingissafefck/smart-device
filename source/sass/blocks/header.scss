@@ -7,6 +7,10 @@
   width: 100%;
   background: variables.$pearl-to-bottom;
   z-index: 3;
+
+  @media (max-width: variables.$vp-max-tablet) {
+    position: absolute;
+  }
 }
 
 .header__container {
@@ -44,6 +48,7 @@
 
 .header__list {
   display: flex;
+  flex-wrap: wrap;
   padding-left: 160px;
   column-gap: 120px;
   flex-grow: 1;
@@ -65,10 +70,17 @@
   }
 }
 
+.header__item {
+  padding: 45px 0 55px;
+
+  @media (max-width: variables.$vp-max-tablet) {
+    padding: 0;
+  }
+}
+
 .header__link {
   display: inline-flex;
   align-items: center;
-  padding: 45px 0 55px;
   line-height: 18px;
 
   @media (max-width: variables.$vp-max-tablet) {
@@ -96,6 +108,7 @@
 }
 
 .header__btn {
+  height: 40px;
   margin: 35px 0 45px;
   padding: 10px 15px;
   white-space: nowrap;

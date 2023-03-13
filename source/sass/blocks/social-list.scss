@@ -2,19 +2,14 @@
 
 .social-list {
   display: flex;
+  max-width: 215px;
   padding-left: 15px;
+  column-gap: 25px;
 
   @media (max-width: variables.$vp-max-tablet) {
+    max-width: unset;
     padding-top: 10px;
     padding-left: 0;
-  }
-}
-
-.social-list__item {
-  margin-left: 25px;
-
-  &:first-of-type {
-    margin-left: 0;
   }
 }
 
