@@ -9,7 +9,7 @@
 
   @media (max-width: variables.$vp-max-tablet) {
     margin-bottom: 80px;
-    background: transparent;
+    background: linear-gradient(180deg, rgba(variables.$color-pearl-overlay, 0.7) 71.72%, rgba(variables.$color-pearl-overlay, 0) 100%);
   }
 
   @media (max-width: variables.$vp-max-mobile) {
