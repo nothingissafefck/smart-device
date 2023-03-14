@@ -682,16 +682,21 @@ html {
 }
 
 .header__logo {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.header__logo picture {
   display: block;
   padding: 30px 0 35px;
 }
 
-.header__logo:hover,
-.header__logo:focus {
+.header__logo picture:hover,
+.header__logo picture:focus-visible {
   opacity: 0.8;
 }
 
-.header__logo:active {
+.header__logo picture:active {
   opacity: 0.6;
 }
 
@@ -725,7 +730,7 @@ html {
 }
 
 .header__link:hover,
-.header__link:focus {
+.header__link:focus-visible {
   opacity: 0.8;
 }
 
@@ -756,7 +761,7 @@ html {
 }
 
 .header__btn:hover,
-.header__btn:focus {
+.header__btn:focus-visible {
   opacity: 0.8;
 }
 
@@ -778,11 +783,13 @@ html {
   position: absolute;
   z-index: -1;
   height: 100%;
+  width: 100%;
   background-color: #041827;
 }
 
 .hero__image img {
   height: 100%;
+  width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
 }
@@ -830,7 +837,7 @@ html {
 }
 
 .hero__link-btn:hover,
-.hero__link-btn:focus {
+.hero__link-btn:focus-visible {
   opacity: 0.8;
 }
 
@@ -968,7 +975,7 @@ html {
 }
 
 .about__btn:hover,
-.about__btn:focus {
+.about__btn:focus-visible {
   background-color: rgba(4, 20, 39, 0.15);
   opacity: 0.8;
 }
@@ -1007,7 +1014,7 @@ html {
 }
 
 .products__card:hover,
-.products__card:focus {
+.products__card:focus-visible {
   opacity: 0.7;
 }
 
@@ -1046,7 +1053,7 @@ html {
 }
 
 .products__icon:hover,
-.products__icon:focus {
+.products__icon:focus-visible {
   background-color: rgba(4, 20, 39, 0.15);
   opacity: 0.8;
 }
@@ -1226,8 +1233,7 @@ html {
   background-image: url("../img/svg/icon-checkbox-unchecked.svg");
 }
 
-.form__checkbox-wrapper span:hover,
-.form__checkbox-wrapper span:focus {
+.form__checkbox-wrapper span:hover {
   opacity: 0.7;
 }
 
@@ -1263,6 +1269,14 @@ html {
   background-image: url("../img/svg/icon-checkbox-checked.svg");
 }
 
+.form__checkbox-wrapper input:focus-visible + span {
+  opacity: 0.7;
+}
+
+.form__checkbox-wrapper input:focus-visible + span::before {
+  outline: #041827 auto 1px;
+}
+
 .footer {
   background-color: #041827;
 }
@@ -1293,7 +1307,7 @@ html {
 }
 
 .footer__logo:hover,
-.footer__logo:focus {
+.footer__logo:focus-visible {
   opacity: 0.8;
 }
 
@@ -1368,7 +1382,7 @@ html {
 }
 
 .footer__navigation-link:hover,
-.footer__navigation-link:focus {
+.footer__navigation-link:focus-visible {
   background-color: rgba(3, 16, 27, 0.7);
   opacity: 0.8;
 }
@@ -1402,7 +1416,7 @@ html {
 }
 
 .footer__location:hover,
-.footer__location:focus {
+.footer__location:focus-visible {
   background-color: rgba(3, 16, 27, 0.7);
   opacity: 0.8;
 }
@@ -1433,6 +1447,8 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   max-width: 215px;
   padding-left: 15px;
   -webkit-column-gap: 25px;
@@ -1441,7 +1457,7 @@ html {
 }
 
 .social-list__link:hover,
-.social-list__link:focus {
+.social-list__link:focus-visible {
   background-color: rgba(4, 20, 39, 0.15);
   opacity: 0.8;
 }
@@ -1540,13 +1556,17 @@ html {
   cursor: pointer;
 }
 
-.modal__close-btn:hover,
-.modal__close-btn:focus {
+.modal__close-btn:hover {
   opacity: 0.7;
 }
 
 .modal__close-btn:active {
   opacity: 0.3;
+}
+
+.modal__close-btn:focus-visible {
+  opacity: 0.7;
+  outline: #041827 auto 1px;
 }
 
 .modal--responsive .modal__content {
@@ -1689,7 +1709,7 @@ html {
     position: absolute;
   }
 
-  .header__logo {
+  .header__logo picture {
     padding: 20px 0 25px;
   }
 
@@ -1713,6 +1733,7 @@ html {
 
   .hero {
     margin-bottom: 80px;
+    background: transparent;
   }
 
   .hero__content {
@@ -1923,7 +1944,7 @@ html {
     padding-right: 25px;
   }
 
-  .header__logo {
+  .header__logo picture {
     padding: 15px 0 20px;
     width: 35px;
     height: 35px;

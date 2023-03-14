@@ -113,8 +113,7 @@
       background-image: url("../img/svg/icon-checkbox-unchecked.svg");
     }
 
-    &:hover,
-    &:focus {
+    &:hover {
       opacity: 0.7;
     }
 
@@ -135,6 +134,16 @@
 
   input:checked + span::before {
     background-image: url("../img/svg/icon-checkbox-checked.svg");
+  }
+
+  input:focus-visible {
+    & + span {
+      opacity: 0.7;
+    }
+
+    & + span::before {
+      outline: variables.$color-pearl auto 1px;
+    }
   }
 
   @media (max-width: variables.$vp-max-tablet) {

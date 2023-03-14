@@ -9,6 +9,7 @@
 
   @media (max-width: variables.$vp-max-tablet) {
     margin-bottom: 80px;
+    background: transparent;
   }
 
   @media (max-width: variables.$vp-max-mobile) {
@@ -20,11 +21,13 @@
   position: absolute;
   z-index: -1;
   height: 100%;
+  width: 100%;
   background-color: variables.$color-pearl;
 }
 
 .hero__image img {
   height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 
@@ -112,7 +115,7 @@
   }
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     opacity: 0.8;
   }
 

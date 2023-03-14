@@ -2,6 +2,7 @@
 
 .social-list {
   display: flex;
+  flex-wrap: wrap;
   max-width: 215px;
   padding-left: 15px;
   column-gap: 25px;
@@ -15,7 +16,7 @@
 
 .social-list__link {
   &:hover,
-  &:focus {
+  &:focus-visible {
     background-color: variables.$color-pearl-fade;
     opacity: 0.8;
   }
